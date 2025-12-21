@@ -1,25 +1,25 @@
-# Composer dependencies
+# Ignore Composer dependencies
 /vendor/
 
-# Environment file
+# Ignore environment file
 .env
 
-# OS generated files
+# Ignore Composer metadata
+/composer.json
+/composer.lock
+
+# Ignore Node modules (kung sakali may JS)
+node_modules/
+
+# Ignore OS generated files
 .DS_Store
 Thumbs.db
 
-# IDE / editor files
+# Ignore IDE/editor files
 /.idea/
 /.vscode/
 
-# Logs and cache
+# Ignore logs and cache
 *.log
 cache/
 tmp/
-
-# Node modules (kung sakali may JS)
-node_modules/
-
-# Ignore public uploads (optional)
-/Config/
-
