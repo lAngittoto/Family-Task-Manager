@@ -1,0 +1,25 @@
+# Composer dependencies
+/vendor/
+
+# Environment file
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+/.idea/
+/.vscode/
+
+# Logs and cache
+*.log
+cache/
+tmp/
+
+# Node modules (kung sakali may JS)
+node_modules/
+
+# Ignore public uploads (optional)
+/Config/
+
