@@ -1,13 +1,15 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteBase /Family_Task_Manager/Public/
 
-    # Allow direct access to existing files
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # Redirect root to /create-account (URL changes)
+    RewriteRule ^$ create-account [R=302,L]
 
-    # Remove .php extension from URL
-    RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+    # Allow existing files and folders
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
 
-    # Redirect everything else to index.php (front controller)
-    RewriteRule ^(.*)$ index.php [QSA,L]
+    # Clean URLs → index.php?page=route
+    RewriteRule ^(.+)$ index.php?page=$1 [L,QSA]
 </IfModule>
