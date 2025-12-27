@@ -6,6 +6,7 @@
   <link href="/Family_Task_Manager/src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="/Family_Task_Manager/Public/CSS/all.min.css">
   <link rel="stylesheet" href="/Family_Task_Manager/Public/CSS/fontawesome.min.css">
+    <link rel="stylesheet" href="/Family_Task_Manager/node_modules/intl-tel-input/build/css/intlTelInput.css">
 </head>
 <body>
      <!--npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch-->
